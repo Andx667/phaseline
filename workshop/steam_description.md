@@ -15,11 +15,11 @@ _Your plan, ready when you are._
 
 The system can be accessed through several modes. The default is chat commands, but you can switch the access mode from the CBA settings menu to ACE interaction or both.
 
-- `#savemarkers [name]` saves your markers (including drawn lines) as a new phase. By default only markers that are not yet in any phase are saved, so you can draw phase 1, save, draw phase 2, save. `--all` saves every marker. An existing name is overwritten.
-- `#loadmarkers [phase] [channel]` recreates a phase on the current map. Without arguments the next phase that isn't on the map yet is loaded. `channel` is `global`, `side`, `command`, `group`, `vehicle` or `direct` (default: side); `local` shows the markers only to you.
-- `#unloadmarkers [phase]` removes the markers of a loaded phase again.
-- `#listmarkers` lists the saved phases of the current map.
-- `#deletemarkers <phase>` deletes a saved phase from your profile.
+- **#savemarkers [name]** saves your markers (including drawn lines) as a new phase. By default only markers that are not yet in any phase are saved, so you can draw phase 1, save, draw phase 2, save. Adding **--all** saves every marker. An existing name is overwritten.
+- **#loadmarkers [phase] [channel]** recreates a phase on the current map. Without arguments the next phase that isn't on the map yet is loaded. The channel is one of global, side, command, group, vehicle or direct (default: side); with local the markers are shown only to you.
+- **#unloadmarkers [phase]** removes the markers of a loaded phase again.
+- **#listmarkers** lists the saved phases of the current map.
+- **#deletemarkers** followed by a phase name deletes that saved phase from your profile.
 
 Saving works in any multiplayer session, including the local multiplayer preview. Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
 
