@@ -27,11 +27,11 @@ Saving works in any multiplayer session, including the local multiplayer preview
 
 Fully open-source. Bug reports, feature requests, and contributions are all welcome.
 
-[GitHub Repository](https://github.com/Andx667/markersave)
-[Report an Issue](https://github.com/Andx667/markersave/issues)
+[GitHub Repository](https://github.com/Andx667/phaseline)
+[Report an Issue](https://github.com/Andx667/phaseline/issues)
 [Discord](https://discord.gg/ag4v6kxYAa)
 
-Licensed under [MIT](https://github.com/Andx667/markersave/blob/main/LICENSE).
+Licensed under [MIT](https://github.com/Andx667/phaseline/blob/main/LICENSE).
 
 ---
 

@@ -3,22 +3,22 @@
 _Your plan, ready when you are._
 
 <p align="center">
-    <img src="https://github.com/Andx667/markersave/blob/main/img/logo.png" alt="Phase Line Logo">
+    <img src="https://github.com/Andx667/phaseline/blob/main/img/logo.png" alt="Phase Line Logo">
 </p>
 
 <p align="center">
-    <a href="https://github.com/Andx667/markersave/issues">
-        <img src="https://img.shields.io/github/issues-raw/Andx667/markersave.svg?style=flat-square&label=Issues" alt="Phase Line Issues">
+    <a href="https://github.com/Andx667/phaseline/issues">
+        <img src="https://img.shields.io/github/issues-raw/Andx667/phaseline.svg?style=flat-square&label=Issues" alt="Phase Line Issues">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=0">
         <img src="https://img.shields.io/steam/downloads/0.svg?style=flat-square&label=Downloads" alt="Phase Line Downloads">
     </a>
-    <a href="https://github.com/Andx667/markersave/blob/main/LICENSE">
+    <a href="https://github.com/Andx667/phaseline/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="Phase Line License">
     </a>
     <br>
-    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/markersave/check.yml?style=flat-square&label=Check" alt="Check">
-    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/markersave/validate.yml?style=flat-square&label=Validate" alt="Validate">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/phaseline/check.yml?style=flat-square&label=Check" alt="Check">
+    <img src="https://img.shields.io/github/actions/workflow/status/Andx667/phaseline/validate.yml?style=flat-square&label=Validate" alt="Validate">
 </p>
 
 __Requires__ [CBA_A3](https://github.com/CBATeam/CBA_A3) and [ACE3](https://github.com/acemod/ACE3).

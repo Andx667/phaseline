@@ -13,6 +13,20 @@ version, and start a fresh empty [Unreleased] section above it. -->
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-10-01
+
+First stable release. Save the map markers you place as named phases in your profile and load them again later on the same map.
+
+### Added
+
+- Chat commands `#savemarkers`, `#loadmarkers`, `#unloadmarkers`, `#listmarkers` and `#deletemarkers`.
+- ACE self-interaction menu and a CBA setting to choose the access mode (chat commands, ACE interaction or both).
+- Loading a phase into a chosen marker channel, or locally only.
+
+### Changed
+
+- Renamed the GitHub repository from `markersave` to `phaseline`.
+
 ## [0.1.0] - 2026-10-01
 
 ### Added
