@@ -1,0 +1,34 @@
+# Marker Phases
+
+**Marker Phases** (MSV) saves the map markers you place as named "phases" in your own profile and loads them again later on the same map. Plan in the local multiplayer preview (Eden), then bring the plan onto the map phase by phase in the real multiplayer.
+
+# Requirements
+
+- [CBA_A3](https://github.com/CBATeam/CBA_A3)
+- [ACE3](https://github.com/acemod/ACE3)
+
+# Features
+
+Everything is controlled with chat commands (open the chat, type `#command`). They work with the map open and are available to every player; other players don't see your input.
+
+- `#savemarkers [name]` saves your markers (including drawn lines) as a new phase. By default only markers that are not yet in any phase are saved, so you can draw phase 1, save, draw phase 2, save. `--all` saves every marker. An existing name is overwritten.
+- `#loadmarkers [phase] [channel]` recreates a phase on the current map. Without arguments the next phase that isn't on the map yet is loaded. `channel` is `global`, `side`, `command`, `group`, `vehicle` or `direct` (default: side); `local` shows the markers only to you.
+- `#unloadmarkers [phase]` removes the markers of a loaded phase again.
+- `#listmarkers` lists the saved phases of the current map.
+- `#deletemarkers <phase>` deletes a saved phase from your profile.
+
+Saving works in any multiplayer session, including the local multiplayer preview. Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
+
+# Source & Issues
+
+Fully open-source. Bug reports, feature requests, and contributions are all welcome.
+
+[GitHub Repository](https://github.com/Andx667/markersave)
+[Report an Issue](https://github.com/Andx667/markersave/issues)
+[Discord](https://discord.gg/ag4v6kxYAa)
+
+Licensed under [MIT](https://github.com/Andx667/markersave/blob/main/LICENSE).
+
+---
+
+Suchst du eine deutschsprachige Arma3 und Reforger Community? -> https://tacticalteam.de/mitmachen

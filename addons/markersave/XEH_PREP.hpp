@@ -1,0 +1,13 @@
+PREP(addDiaryRecord);
+PREP(createPlayerMarker);
+PREP(deletePhase);
+PREP(getLoadedIndex);
+PREP(getPhases);
+PREP(listPhases);
+PREP(loadPhase);
+PREP(parseArgs);
+PREP(resolvePhase);
+PREP(restoreMarker);
+PREP(savePhase);
+PREP(setPhases);
+PREP(unloadPhase);
