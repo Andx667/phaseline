@@ -13,12 +13,7 @@ if !(isNil QGVAR(aceUnitEH)) then {
 };
 
 if !(isNil QGVAR(aceActionUnit)) then {
-    private _unit = GVAR(aceActionUnit);
-
-    if !(isNull _unit) then {
-        // Das Hauptmenü entfernt seine Unteraktionen mit
-        [_unit, 1, ["ACE_SelfActions", QGVAR(accessMenu)]] call ace_interact_menu_fnc_removeActionFromObject;
-    };
+    [GVAR(aceActionUnit)] call FUNC(removeAceActions);
 
     GVAR(aceActionUnit) = nil;
 };
@@ -30,9 +25,7 @@ if !(isClass (configFile >> "CfgPatches" >> "ace_interact_menu")) exitWith {};
 GVAR(aceUnitEH) = ["unit", {
     params ["_unit", "_oldUnit"];
 
-    if (!isNull _oldUnit) then {
-        [_oldUnit, 1, ["ACE_SelfActions", QGVAR(accessMenu)]] call ace_interact_menu_fnc_removeActionFromObject;
-    };
+    [_oldUnit] call FUNC(removeAceActions);
 
     GVAR(aceActionUnit) = _unit;
 

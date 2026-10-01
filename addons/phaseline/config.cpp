@@ -7,7 +7,7 @@ class CfgPatches {
         url = "https://github.com/Andx667/markersave";
         authors[] = {"Andx"};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"pl_main", "cba_main", "ace_common"};
+        requiredAddons[] = {"pl_main", "cba_main", "ace_common", "ace_interact_menu"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;

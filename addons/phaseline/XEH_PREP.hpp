@@ -7,6 +7,7 @@ PREP(getPhases);
 PREP(listPhases);
 PREP(loadPhase);
 PREP(parseArgs);
+PREP(removeAceActions);
 PREP(resolvePhase);
 PREP(restoreMarker);
 PREP(savePhase);
