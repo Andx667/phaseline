@@ -32,7 +32,7 @@ if (_phase isEqualType "") then {
     };
 };
 
-if (_index == -1 && {_phase isEqualType 0} && {_phase == floor _phase} && {_phase >= 1} && {_phase <= count _phases}) then {
+if (_index == -1 && _phase isEqualType 0 && {_phase == floor _phase && _phase >= 1 && _phase <= count _phases}) then {
     _index = _phase - 1;
 };
 

@@ -31,7 +31,7 @@ if (_channel isEqualType "") then {
     _channel = CHANNEL_NAMES find _channel;
 };
 
-if (_channel < CHANNEL_MIN || {_channel > CHANNEL_MAX}) exitWith {
+if (_channel < CHANNEL_MIN || _channel > CHANNEL_MAX) exitWith {
     ERROR_1("Invalid channel given! - %1",_channel);
 
     "" // return

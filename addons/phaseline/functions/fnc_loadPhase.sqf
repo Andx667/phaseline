@@ -59,7 +59,7 @@ if (_channel isEqualType "") then {
     _channel = CHANNEL_NAMES find toLower _channel;
 };
 
-if (!_useDefault && {_channel < 0 || {_channel > 5}}) exitWith {
+if (!_useDefault && {_channel < 0 || _channel > 5}) exitWith {
     ERROR_1("Invalid channel given! - %1",_channel);
 
     false

@@ -3,7 +3,7 @@
 _Your plan, ready when you are._
 
 <p align="center">
-    <img src="https://github.com/Andx667/markersave/blob/main/img/icon.png" alt="Phase Line Logo">
+    <img src="https://github.com/Andx667/markersave/blob/main/img/logo.png" alt="Phase Line Logo">
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@ __Client-side only__: no server installation required, other players do not need
 
 The project is entirely __open-source__ and any contributions are welcome.
 
-Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=0>  
+Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=0>
 Discord: <https://discord.gg/ag4v6kxYAa>
 
 ## Features
