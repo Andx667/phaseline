@@ -7,10 +7,10 @@
  * 0: Phase name <STRING>
  *
  * Return Value:
- * Index in msv_markersave_loadedPhases, -1 if the phase is not loaded <NUMBER>
+ * Index in pl_phaseline_loadedPhases, -1 if the phase is not loaded <NUMBER>
  *
  * Example:
- * ["Phase 1"] call msv_markersave_fnc_getLoadedIndex
+ * ["Phase 1"] call pl_phaseline_fnc_getLoadedIndex
  *
  * Public: No
  */

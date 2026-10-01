@@ -12,7 +12,7 @@
  * Phase was saved <BOOL>
  *
  * Example:
- * ["Phase 1"] call msv_markersave_fnc_savePhase
+ * ["Phase 1"] call pl_phaseline_fnc_savePhase
  *
  * Public: Yes
  */

@@ -1,7 +1,7 @@
 // COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp
 
 #define MAINPREFIX z
-#define PREFIX msv
+#define PREFIX pl
 #define AUTHOR "Andx"
 
 #include "script_version.hpp"
@@ -16,4 +16,4 @@
 #ifndef COMPONENT_BEAUTIFIED
     #define COMPONENT_BEAUTIFIED COMPONENT
 #endif
-#define COMPONENT_NAME QUOTE(Marker Phases - COMPONENT_BEAUTIFIED)
+#define COMPONENT_NAME QUOTE(Phase Line - COMPONENT_BEAUTIFIED)

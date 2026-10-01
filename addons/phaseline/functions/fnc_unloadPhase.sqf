@@ -10,7 +10,7 @@
  * A phase was unloaded <BOOL>
  *
  * Example:
- * [] call msv_markersave_fnc_unloadPhase
+ * [] call pl_phaseline_fnc_unloadPhase
  *
  * Public: Yes
  */

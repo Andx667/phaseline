@@ -1,18 +1,20 @@
-# Marker Phases
+# Phase Line
+
+_Your plan, ready when you are._
 
 <p align="center">
-    <img src="https://github.com/Andx667/markersave/blob/main/img/icon.png" alt="Marker Phases Logo">
+    <img src="https://github.com/Andx667/markersave/blob/main/img/icon.png" alt="Phase Line Logo">
 </p>
 
 <p align="center">
     <a href="https://github.com/Andx667/markersave/issues">
-        <img src="https://img.shields.io/github/issues-raw/Andx667/markersave.svg?style=flat-square&label=Issues" alt="Marker Phases Issues">
+        <img src="https://img.shields.io/github/issues-raw/Andx667/markersave.svg?style=flat-square&label=Issues" alt="Phase Line Issues">
     </a>
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=0">
-        <img src="https://img.shields.io/steam/downloads/0.svg?style=flat-square&label=Downloads" alt="Marker Phases Downloads">
+        <img src="https://img.shields.io/steam/downloads/0.svg?style=flat-square&label=Downloads" alt="Phase Line Downloads">
     </a>
     <a href="https://github.com/Andx667/markersave/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="Marker Phases License">
+        <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="Phase Line License">
     </a>
     <br>
     <img src="https://img.shields.io/github/actions/workflow/status/Andx667/markersave/check.yml?style=flat-square&label=Check" alt="Check">
@@ -21,7 +23,7 @@
 
 __Requires__ [CBA_A3](https://github.com/CBATeam/CBA_A3) and [ACE3](https://github.com/acemod/ACE3).
 
-__Marker Phases__ (MSV) saves the map markers you place as named "phases" in your own profile and loads them again later on the same map. Plan in the local multiplayer preview (Eden), then bring the plan onto the map phase by phase in the real multiplayer.
+__Phase Line__ (PL) saves the map markers you place as named "phases" in your own profile and loads them again later on the same map. Plan in the local multiplayer preview (Eden), then bring the plan onto the map phase by phase in the real multiplayer.
 
 The project is entirely __open-source__ and any contributions are welcome.
 
@@ -46,4 +48,4 @@ For new contributors, see the [Contributing Setup & Guidelines](./.github/CONTRI
 
 ## License
 
-Marker Phases is licensed under [MIT](./LICENSE).
+Phase Line is licensed under [MIT](./LICENSE).

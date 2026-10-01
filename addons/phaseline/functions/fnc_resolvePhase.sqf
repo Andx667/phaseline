@@ -5,13 +5,13 @@
  *
  * Arguments:
  * 0: Phase name or 1-based position (also accepted as numeric string) <STRING, NUMBER>
- * 1: Phases as returned by msv_markersave_fnc_getPhases <ARRAY>
+ * 1: Phases as returned by pl_phaseline_fnc_getPhases <ARRAY>
  *
  * Return Value:
  * Index into the given phases, -1 if there is no match <NUMBER>
  *
  * Example:
- * ["Phase 1", _phases] call msv_markersave_fnc_resolvePhase
+ * ["Phase 1", _phases] call pl_phaseline_fnc_resolvePhase
  *
  * Public: No
  */

@@ -4,7 +4,7 @@
  * Creates a player owned map marker from a saved record.
  *
  * Arguments:
- * 0: Marker record as saved by msv_markersave_fnc_savePhase <ARRAY>
+ * 0: Marker record as saved by pl_phaseline_fnc_savePhase <ARRAY>
  * 1: Channel to create the marker on, see Channel IDs <NUMBER>
  * 2: Keep the marker local, do not broadcast it <BOOL> (default: false)
  *
@@ -12,7 +12,7 @@
  * Marker ID, empty string if could not create <STRING>
  *
  * Example:
- * [_record, 1, false] call msv_markersave_fnc_restoreMarker
+ * [_record, 1, false] call pl_phaseline_fnc_restoreMarker
  *
  * Public: No
  */

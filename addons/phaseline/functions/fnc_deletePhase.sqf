@@ -10,7 +10,7 @@
  * Phase was deleted <BOOL>
  *
  * Example:
- * ["Phase 1"] call msv_markersave_fnc_deletePhase
+ * ["Phase 1"] call pl_phaseline_fnc_deletePhase
  *
  * Public: Yes
  */

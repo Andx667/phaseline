@@ -13,8 +13,8 @@
  * Loading was started <BOOL>
  *
  * Example:
- * [] call msv_markersave_fnc_loadPhase
- * ["Phase 2", "group"] call msv_markersave_fnc_loadPhase
+ * [] call pl_phaseline_fnc_loadPhase
+ * ["Phase 2", "group"] call pl_phaseline_fnc_loadPhase
  *
  * Public: Yes
  */

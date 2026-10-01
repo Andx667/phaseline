@@ -14,7 +14,7 @@ GVAR(playerMarkerIdx) = 0;
 [
     QGVAR(accessMode),
     "LIST",
-    ["Access mode", "Choose how to access Marker Phases."],
+    ["Access mode", "Choose how to access Phase Line."],
     [COMPONENT_BEAUTIFIED, "Access"],
     [[ACCESS_MODE_CHAT, ACCESS_MODE_ACE, ACCESS_MODE_ALL], ["Chat commands", "ACE interaction", "Both"]],
     ACCESS_MODE_CHAT,

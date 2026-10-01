@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [_phases] call msv_markersave_fnc_setPhases
+ * [_phases] call pl_phaseline_fnc_setPhases
  *
  * Public: No
  */

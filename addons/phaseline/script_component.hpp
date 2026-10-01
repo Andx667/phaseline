@@ -1,8 +1,8 @@
-#define COMPONENT markersave
-#define COMPONENT_BEAUTIFIED Marker Phases
+#define COMPONENT phaseline
+#define COMPONENT_BEAUTIFIED Phase Line
 
-#include "\z\msv\addons\main\script_mod.hpp"
-#include "\z\msv\addons\main\script_macros.hpp"
+#include "\z\pl\addons\main\script_mod.hpp"
+#include "\z\pl\addons\main\script_macros.hpp"
 
 // Layout der gespeicherten Daten, bei inkompatiblen Änderungen erhöhen
 #define PHASE_FORMAT_VERSION 1

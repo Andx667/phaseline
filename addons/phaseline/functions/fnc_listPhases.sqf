@@ -10,7 +10,7 @@
  * There is at least one saved phase <BOOL>
  *
  * Example:
- * [] call msv_markersave_fnc_listPhases
+ * [] call pl_phaseline_fnc_listPhases
  *
  * Public: Yes
  */

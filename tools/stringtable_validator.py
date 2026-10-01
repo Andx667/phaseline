@@ -26,7 +26,7 @@ import xml.etree.ElementTree as ET
 
 
 ######## GLOBALS #########
-PROJECT_NAME = "msv"
+PROJECT_NAME = "pl"
 ##########################
 
 

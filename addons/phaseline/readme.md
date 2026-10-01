@@ -11,7 +11,7 @@ Die Marker erzeugt nc_createPlayerMarker (ursprünglich aus 	tt_common) mit dem
 
 ## Speicherformat
 
-Pro Karte eine Profilvariable `msv_markersave_phases_<toLower worldName>` mit dem Inhalt `[PHASE_FORMAT_VERSION, phasen]`. Jede Phase ist `[name, systemTime, records]`, jeder Record `[shape, type, color, size, brush, dir, text, alpha, pos, polyline]`. Es sind bewusst verschachtelte Arrays statt einer HashMap, damit das Profil-Format keine Fragen offen lässt. Bei einer inkompatiblen Änderung muss `PHASE_FORMAT_VERSION` erhöht werden - `fnc_getPhases` liefert für unbekannte Versionen eine leere Liste.
+Pro Karte eine Profilvariable `pl_phaseline_phases_<toLower worldName>` mit dem Inhalt `[PHASE_FORMAT_VERSION, phasen]`. Jede Phase ist `[name, systemTime, records]`, jeder Record `[shape, type, color, size, brush, dir, text, alpha, pos, polyline]`. Es sind bewusst verschachtelte Arrays statt einer HashMap, damit das Profil-Format keine Fragen offen lässt. Bei einer inkompatiblen Änderung muss `PHASE_FORMAT_VERSION` erhöht werden - `fnc_getPhases` liefert für unbekannte Versionen eine leere Liste.
 
 Gespeichert werden nur Marker, deren Name mit `_USER_DEFINED #<Spieler-ID>/` beginnt (also vom Spieler gesetzt, inklusive gezeichneter Linien als `POLYLINE`). Missions- und Editormarker bleiben außen vor. `saveProfileNamespace` wird nach jeder Änderung aufgerufen, damit nichts bei einem Absturz verloren geht.
 

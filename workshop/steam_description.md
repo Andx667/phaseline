@@ -1,6 +1,8 @@
-# Marker Phases
+# Phase Line
 
-**Marker Phases** (MSV) saves the map markers you place as named "phases" in your own profile and loads them again later on the same map. Plan in the local multiplayer preview (Eden), then bring the plan onto the map phase by phase in the real multiplayer.
+_Your plan, ready when you are._
+
+**Phase Line** (PL) saves the map markers you place as named "phases" in your own profile and loads them again later on the same map. Plan in the local multiplayer preview (Eden), then bring the plan onto the map phase by phase in the real multiplayer.
 
 # Requirements
 

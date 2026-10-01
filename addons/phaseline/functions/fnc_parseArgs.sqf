@@ -15,7 +15,7 @@
  * - all: "--all" flag was given <BOOL>
  *
  * Example:
- * ["Phase 1 group", true] call msv_markersave_fnc_parseArgs
+ * ["Phase 1 group", true] call pl_phaseline_fnc_parseArgs
  *
  * Public: No
  */

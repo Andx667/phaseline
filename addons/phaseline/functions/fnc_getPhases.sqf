@@ -10,7 +10,7 @@
  * Phases, each as [name, systemTime, records] <ARRAY>
  *
  * Example:
- * [] call msv_markersave_fnc_getPhases
+ * [] call pl_phaseline_fnc_getPhases
  *
  * Public: No
  */

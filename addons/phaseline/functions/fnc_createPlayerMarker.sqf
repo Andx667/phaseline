@@ -13,7 +13,7 @@
  * Marker ID, empty string if could not create <STRING>
  *
  * Example:
- * [player, "global"] call msv_markersave_fnc_createPlayerMarker
+ * [player, "global"] call pl_phaseline_fnc_createPlayerMarker
  *
  * Public: No
  */

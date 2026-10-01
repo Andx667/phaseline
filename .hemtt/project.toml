@@ -1,6 +1,6 @@
-name = "Marker Phases"
+name = "Phase Line"
 author = "Andx"
-prefix = "msv"
+prefix = "pl"
 mainprefix = "z"
 
 [version]

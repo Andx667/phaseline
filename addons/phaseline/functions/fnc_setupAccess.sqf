@@ -38,7 +38,7 @@ GVAR(aceUnitEH) = ["unit", {
 
     if (isNull _unit) exitWith {};
 
-    private _menuAction = [QGVAR(accessMenu), "Marker Phases", "", {true}, {true}] call ace_interact_menu_fnc_createAction;
+    private _menuAction = [QGVAR(accessMenu), "Phase Line", "", {true}, {true}] call ace_interact_menu_fnc_createAction;
     [_unit, 1, ["ACE_SelfActions"], _menuAction] call ace_interact_menu_fnc_addActionToObject;
 
     {

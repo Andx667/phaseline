@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * ["Phase 1", 12] call msv_markersave_fnc_addDiaryRecord
+ * ["Phase 1", 12] call pl_phaseline_fnc_addDiaryRecord
  *
  * Public: No
  */
