@@ -4,6 +4,7 @@ if (!hasInterface) exitWith {};
 
 // Alle Befehle arbeiten nur auf dem Profil des Spielers, deshalb für jeden verfügbar
 ["savemarkers", {
+    if !(call FUNC(chatEnabled)) exitWith {};
     params ["_input"];
     ([_input] call FUNC(parseArgs)) params ["_name", "", "", "_all"];
 
@@ -11,6 +12,7 @@ if (!hasInterface) exitWith {};
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["loadmarkers", {
+    if !(call FUNC(chatEnabled)) exitWith {};
     params ["_input"];
     ([_input, true] call FUNC(parseArgs)) params ["_phase", "_channel", "_local"];
 
@@ -18,6 +20,7 @@ if (!hasInterface) exitWith {};
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["unloadmarkers", {
+    if !(call FUNC(chatEnabled)) exitWith {};
     params ["_input"];
     ([_input] call FUNC(parseArgs)) params ["_phase"];
 
@@ -25,12 +28,17 @@ if (!hasInterface) exitWith {};
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["listmarkers", {
+    if !(call FUNC(chatEnabled)) exitWith {};
     [] call FUNC(listPhases);
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["deletemarkers", {
+    if !(call FUNC(chatEnabled)) exitWith {};
     params ["_input"];
     ([_input] call FUNC(parseArgs)) params ["_phase"];
 
     [_phase] call FUNC(deletePhase);
 }, "all"] call CBA_fnc_registerChatCommand;
+
+GVAR(accessReady) = true;
+[] call FUNC(setupAccess);

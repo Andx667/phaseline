@@ -1,4 +1,5 @@
 PREP(addDiaryRecord);
+PREP(chatEnabled);
 PREP(createPlayerMarker);
 PREP(deletePhase);
 PREP(getLoadedIndex);
@@ -10,4 +11,5 @@ PREP(resolvePhase);
 PREP(restoreMarker);
 PREP(savePhase);
 PREP(setPhases);
+PREP(setupAccess);
 PREP(unloadPhase);

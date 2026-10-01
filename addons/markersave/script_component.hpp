@@ -14,3 +14,7 @@
 
 #define CHANNEL_NAMES ["global", "side", "command", "group", "vehicle", "direct"]
 #define DEFAULT_CHANNEL 1
+
+#define ACCESS_MODE_ACE 0
+#define ACCESS_MODE_CHAT 1
+#define ACCESS_MODE_ALL 2

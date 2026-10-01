@@ -1,6 +1,6 @@
 # Marker-Phasen
 
-Speichert die vom Spieler gesetzten Kartenmarker als benannte "Phasen" im eigenen Profil (`profileNamespace`) und lädt sie später auf derselben Karte wieder. Gedacht, um in der lokalen Multiplayer-Vorschau (Eden) eine Planung vorzubereiten und sie im echten Multiplayer Phase für Phase auf die Karte zu bringen. Gespeichert werden kann in jedem Multiplayer, also auch auf einem Server. Die Bedienung erfolgt über Chat-Befehle (`#savemarkers`, `#loadmarkers`, `#unloadmarkers`, `#listmarkers`, `#deletemarkers`). Die Bedienung ist in der [README](../../README.md) beschrieben.
+Speichert die vom Spieler gesetzten Kartenmarker als benannte "Phasen" im eigenen Profil (`profileNamespace`) und lädt sie später auf derselben Karte wieder. Gedacht, um in der lokalen Multiplayer-Vorschau (Eden) eine Planung vorzubereiten und sie im echten Multiplayer Phase für Phase auf die Karte zu bringen. Gespeichert werden kann in jedem Multiplayer, also auch auf einem Server. Die Bedienung ist über CBA-Einstellungen konfigurierbar und unterstützt ACE-Interaktion, Chat-Befehle (`#savemarkers`, `#loadmarkers`, `#unloadmarkers`, `#listmarkers`, `#deletemarkers`). Die Bedienung ist in der [README](../../README.md) beschrieben.
 
 ## Abhängigkeiten
 
