@@ -5,9 +5,9 @@ Speichert die vom Spieler gesetzten Kartenmarker als benannte "Phasen" im eigene
 ## Abhängigkeiten
 
 - CBA - Chat-Befehle (CBA_fnc_registerChatCommand), Per-Frame-Handler und die Makros.
-- ACE - ce_common_fnc_displayTextStructured für die Rückmeldungen.
+- ACE - `ace_common_fnc_displayTextStructured` für die Rückmeldungen.
 
-Die Marker erzeugt nc_createPlayerMarker (ursprünglich aus 	tt_common) mit dem richtigen _USER_DEFINED-Namen, sodass der Spieler sie wie selbst gesetzte Marker wieder löschen kann.
+Die Marker erzeugt `fnc_createPlayerMarker` (ursprünglich aus `ttt_common`) mit dem richtigen _USER_DEFINED-Namen, sodass der Spieler sie wie selbst gesetzte Marker wieder löschen kann.
 
 ## Speicherformat
 
