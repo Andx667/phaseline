@@ -25,6 +25,8 @@ __Requires__ [CBA_A3](https://github.com/CBATeam/CBA_A3) and [ACE3](https://gith
 
 __Phase Line__ (PL) saves the map markers you place as named "phases" in your own profile and loads them again later on the same map. Plan in the local multiplayer preview (Eden), then bring the plan onto the map phase by phase in the real multiplayer.
 
+__Client-side only__: no server installation required, other players do not need the mod. Servers that verify signatures must allow its key.
+
 The project is entirely __open-source__ and any contributions are welcome.
 
 Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=0>

@@ -4,6 +4,8 @@ _Your plan, ready when you are._
 
 **Phase Line** (PL) saves the map markers you place as named "phases" in your own profile and loads them again later on the same map. Plan in the local multiplayer preview (Eden), then bring the plan onto the map phase by phase in the real multiplayer.
 
+**Client-side only**: no server installation required, other players do not need the mod. Servers that verify signatures must allow its key.
+
 # Requirements
 
 - [CBA_A3](https://github.com/CBATeam/CBA_A3)
