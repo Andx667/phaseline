@@ -13,6 +13,18 @@ version, and start a fresh empty [Unreleased] section above it. -->
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-10-01
+
+Hotfix for the 1.0.0 release.
+
+### Fixed
+
+- Include `img/icon_ca.paa` in the release build, so the mod icon is no longer missing in the launcher and main menu.
+
+### Changed
+
+- Changed the mod accent colour (`dlcColor`) to amber `#E8A33D`.
+
 ## [1.0.0] - 2026-10-01
 
 First stable release. Save the map markers you place as named phases in your profile and load them again later on the same map.
