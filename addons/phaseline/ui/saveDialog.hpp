@@ -15,7 +15,7 @@ class RscButtonMenuCancel;
 class GVAR(saveDialog) {
     idd = -1;
     movingEnable = 0;
-    onLoad = QUOTE(ctrlSetFocus ((_this select 0) displayCtrl IDC_SAVE_NAME));
+    onLoad = QUOTE(_this call FUNC(onSaveDialogLoad));
     onUnload = QUOTE(_this call FUNC(onSaveDialogUnload));
 
     class controlsBackground {

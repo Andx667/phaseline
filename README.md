@@ -45,7 +45,7 @@ The system can be accessed through several modes. The default is chat commands, 
 
 The ACE self-interaction menu "Phase Line" has the same functions:
 
-- __Save markers__ saves the new markers under the next free default name. With the setting "Save other players' markers" enabled, its sub-menu lists every other player who placed markers; selecting one saves that player's markers as a phase named after the player. "All other players" saves them together. __Save markers as...__ opens a dialog for the name and for saving every marker.
+- __Save markers__ saves the new markers under the next free default name. With the setting "Save other players' markers" enabled, its sub-menu lists every other player who placed markers; selecting one saves that player's markers as a phase named after the player. "All other players" saves them together. __Save markers as...__ opens a dialog for the name and for saving every marker; that option is preselected when all your markers are already in a phase.
 - __Load markers__ loads the next phase. Its sub-menu lists the phases that are not loaded yet; selecting one loads it on the default channel, its own sub-menu picks the channel or "Local only".
 - __Unload markers__ removes the most recently loaded phase, its sub-menu lists every loaded phase.
 - __List markers__ lists the saved phases of the current map.
