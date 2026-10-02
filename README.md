@@ -10,8 +10,8 @@ _Your plan, ready when you are._
     <a href="https://github.com/Andx667/phaseline/issues">
         <img src="https://img.shields.io/github/issues-raw/Andx667/phaseline.svg?style=flat-square&label=Issues" alt="Phase Line Issues">
     </a>
-    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=0">
-        <img src="https://img.shields.io/steam/downloads/0.svg?style=flat-square&label=Downloads" alt="Phase Line Downloads">
+    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3811355264">
+        <img src="https://img.shields.io/steam/downloads/3811355264.svg?style=flat-square&label=Downloads" alt="Phase Line Downloads">
     </a>
     <a href="https://github.com/Andx667/phaseline/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="Phase Line License">
@@ -29,7 +29,7 @@ __Client-side only__: no server installation required, other players do not need
 
 The project is entirely __open-source__ and any contributions are welcome.
 
-Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=0>  
+Steam Workshop: <https://steamcommunity.com/sharedfiles/filedetails/?id=3811355264>  
 Discord: <https://discord.gg/ag4v6kxYAa>
 
 ## Features

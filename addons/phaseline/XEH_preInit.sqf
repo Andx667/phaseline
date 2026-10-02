@@ -16,8 +16,9 @@ GVAR(playerMarkerIdx) = 0;
     "LIST",
     [LSTRING(accessMode), LSTRING(accessModeDesc)],
     [QUOTE(COMPONENT_BEAUTIFIED), LSTRING(accessCategory)],
-    [[ACCESS_MODE_CHAT, ACCESS_MODE_ACE, ACCESS_MODE_ALL], [LSTRING(accessModeChat), LSTRING(accessModeAce), LSTRING(accessModeAll)]],
-    ACCESS_MODE_CHAT,
+    [[ACCESS_MODE_CHAT, ACCESS_MODE_ACE, ACCESS_MODE_ALL], [LSTRING(accessModeChat), LSTRING(accessModeAce), LSTRING(accessModeAll)], 0],
+    // Client-Einstellung: Der Mod läuft nur beim Spieler, ein Server ohne den Mod kann sie nicht vorgeben
+    false,
     {
         params ["_value"];
 
