@@ -13,14 +13,23 @@ version, and start a fresh empty [Unreleased] section above it. -->
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-10-02
+
+The ACE menu now does everything the chat commands do, Phase Line works in singleplayer, and other players' markers can be saved.
+
 ### Added
 
 - The ACE self-interaction menu now covers everything the chat commands do: saving under a name or with every marker, loading a chosen phase on a chosen channel or locally, unloading a chosen phase, and deleting a phase.
 - Singleplayer support: with the access mode set to ACE interaction or both, phases can be saved in singleplayer.
 - Saving other players' markers: `#savemarkers --other` saves the markers placed by other players, and the ACE menu lists each other player under "Save markers" to save that player's markers as a phase named after them. The CBA setting "Show other players in the save menu" (on by default) hides that list.
 
+### Changed
+
+- `--all` is only recognised by `#savemarkers`. The other commands used to ignore it; they now treat it as part of the phase name.
+
 ### Fixed
 
+- The access mode could not be changed on a dedicated server, so the ACE menu was unavailable there. It is now a per-player setting.
 - The access mode setting, the ACE interaction entries and the "chat commands are disabled" message are now translated instead of always being shown in English.
 
 ## [1.0.1] - 2026-10-01
