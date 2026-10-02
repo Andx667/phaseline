@@ -13,6 +13,10 @@ version, and start a fresh empty [Unreleased] section above it. -->
 
 ## [Unreleased]
 
+### Fixed
+
+- The access mode setting, the ACE interaction entries and the "chat commands are disabled" message are now translated instead of always being shown in English.
+
 ## [1.0.1] - 2026-10-01
 
 Hotfix for the 1.0.0 release.

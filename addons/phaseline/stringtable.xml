@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="pl">
     <Package name="Phaseline">
+        <Key ID="STR_pl_Phaseline_accessCategory">
+            <English>Access</English>
+            <German>Zugriff</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_accessMode">
+            <English>Access mode</English>
+            <German>Zugriffsart</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_accessModeAce">
+            <English>ACE interaction</English>
+            <German>ACE-Interaktion</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_accessModeAll">
+            <English>Both</English>
+            <German>Beides</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_accessModeChat">
+            <English>Chat commands</English>
+            <German>Chat-Befehle</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_accessModeDesc">
+            <English>Choose how to access Phase Line.</English>
+            <German>Legt fest, wie Phase Line bedient wird.</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_actionList">
+            <English>List markers</English>
+            <German>Marker auflisten</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_actionLoad">
+            <English>Load markers</English>
+            <German>Marker laden</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_actionSave">
+            <English>Save markers</English>
+            <German>Marker speichern</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_actionUnload">
+            <English>Unload markers</English>
+            <German>Marker entladen</German>
+        </Key>
         <Key ID="STR_pl_Phaseline_allLoaded">
             <English>All phases are already loaded.</English>
             <German>Alle Phasen sind bereits geladen.</German>
@@ -12,6 +52,10 @@
         <Key ID="STR_pl_Phaseline_channelDisabled">
             <English>No channel available for placing markers.</English>
             <German>Es ist kein Kanal zum Platzieren von Markern verfügbar.</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_chatDisabled">
+            <English>Phase Line: Chat commands are disabled in the CBA settings.</English>
+            <German>Phase Line: Chat-Befehle sind in den CBA-Einstellungen deaktiviert.</German>
         </Key>
         <Key ID="STR_pl_Phaseline_defaultName">
             <English>Phase %1</English>
