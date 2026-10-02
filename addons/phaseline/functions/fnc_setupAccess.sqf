@@ -35,15 +35,18 @@ GVAR(aceUnitEH) = ["unit", {
     [_unit, 1, ["ACE_SelfActions"], _menuAction] call ace_interact_menu_fnc_addActionToObject;
 
     {
-        _x params ["_id", "_name", "_code"];
+        _x params ["_id", "_name", "_code", ["_condition", {true}], ["_children", {}]];
 
-        private _action = [_id, _name, "", _code, {true}] call ace_interact_menu_fnc_createAction;
+        private _action = [_id, _name, "", _code, _condition, _children] call ace_interact_menu_fnc_createAction;
         [_unit, 1, ["ACE_SelfActions", QGVAR(accessMenu)], _action] call ace_interact_menu_fnc_addActionToObject;
     } forEach [
         [QGVAR(saveAction), LLSTRING(actionSave), {[] call FUNC(savePhase);}],
-        [QGVAR(loadAction), LLSTRING(actionLoad), {[] call FUNC(loadPhase);}],
-        [QGVAR(unloadAction), LLSTRING(actionUnload), {[] call FUNC(unloadPhase);}],
-        [QGVAR(listAction), LLSTRING(actionList), {[] call FUNC(listPhases);}]
+        // Erst im nächsten Frame, das Interaktionsmenü schließt sich noch
+        [QGVAR(saveAsAction), LLSTRING(actionSaveAs), {[{createDialog QGVAR(saveDialog)}] call CBA_fnc_execNextFrame;}],
+        [QGVAR(loadAction), LLSTRING(actionLoad), {[] call FUNC(loadPhase);}, {true}, FUNC(aceLoadChildren)],
+        [QGVAR(unloadAction), LLSTRING(actionUnload), {[] call FUNC(unloadPhase);}, {true}, FUNC(aceUnloadChildren)],
+        [QGVAR(listAction), LLSTRING(actionList), {[] call FUNC(listPhases);}],
+        [QGVAR(deleteAction), LLSTRING(actionDelete), {}, {(call FUNC(getPhaseNames)) isNotEqualTo []}, FUNC(aceDeleteChildren)]
     ];
 }, true] call CBA_fnc_addPlayerEventHandler;
 

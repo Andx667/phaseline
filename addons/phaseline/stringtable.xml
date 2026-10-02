@@ -25,6 +25,10 @@
             <English>Choose how to access Phase Line.</English>
             <German>Legt fest, wie Phase Line bedient wird.</German>
         </Key>
+        <Key ID="STR_pl_Phaseline_actionDelete">
+            <English>Delete phase</English>
+            <German>Phase löschen</German>
+        </Key>
         <Key ID="STR_pl_Phaseline_actionList">
             <English>List markers</English>
             <German>Marker auflisten</German>
@@ -36,6 +40,10 @@
         <Key ID="STR_pl_Phaseline_actionSave">
             <English>Save markers</English>
             <German>Marker speichern</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_actionSaveAs">
+            <English>Save markers as...</English>
+            <German>Marker speichern unter...</German>
         </Key>
         <Key ID="STR_pl_Phaseline_actionUnload">
             <English>Unload markers</English>
@@ -49,13 +57,45 @@
             <English>Phase "%1" is already loaded.</English>
             <German>Phase "%1" ist bereits geladen.</German>
         </Key>
+        <Key ID="STR_pl_Phaseline_channelCommand">
+            <English>Command</English>
+            <German>Kommando</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_channelDirect">
+            <English>Direct</English>
+            <German>Direkt</German>
+        </Key>
         <Key ID="STR_pl_Phaseline_channelDisabled">
             <English>No channel available for placing markers.</English>
             <German>Es ist kein Kanal zum Platzieren von Markern verfügbar.</German>
         </Key>
+        <Key ID="STR_pl_Phaseline_channelGlobal">
+            <English>Global</English>
+            <German>Global</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_channelGroup">
+            <English>Group</English>
+            <German>Gruppe</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_channelLocal">
+            <English>Local only</English>
+            <German>Nur lokal</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_channelSide">
+            <English>Side</English>
+            <German>Seite</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_channelVehicle">
+            <English>Vehicle</English>
+            <German>Fahrzeug</German>
+        </Key>
         <Key ID="STR_pl_Phaseline_chatDisabled">
             <English>Phase Line: Chat commands are disabled in the CBA settings.</English>
             <German>Phase Line: Chat-Befehle sind in den CBA-Einstellungen deaktiviert.</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_confirmDelete">
+            <English>Confirm</English>
+            <German>Bestätigen</German>
         </Key>
         <Key ID="STR_pl_Phaseline_defaultName">
             <English>Phase %1</English>
@@ -104,6 +144,22 @@
         <Key ID="STR_pl_Phaseline_nothingLoaded">
             <English>No phase is loaded.</English>
             <German>Es ist keine Phase geladen.</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_saveDialogAll">
+            <English>Also save markers that are already in a phase</English>
+            <German>Auch Marker speichern, die schon in einer Phase sind</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_saveDialogName">
+            <English>Phase name</English>
+            <German>Phasenname</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_saveDialogNameTooltip">
+            <English>Leave empty to use the next free default name. An existing phase with the same name is overwritten.</English>
+            <German>Leer lassen, um den nächsten freien Standardnamen zu verwenden. Eine vorhandene Phase mit demselben Namen wird überschrieben.</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_saveDialogTitle">
+            <English>Save markers as phase</English>
+            <German>Marker als Phase speichern</German>
         </Key>
         <Key ID="STR_pl_Phaseline_saveNotAllowed">
             <English>Saving is only possible in multiplayer, not in singleplayer.</English>
