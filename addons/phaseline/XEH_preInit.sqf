@@ -34,7 +34,7 @@ GVAR(playerMarkerIdx) = 0;
     "CHECKBOX",
     [LSTRING(saveOthers), LSTRING(saveOthersDesc)],
     [QUOTE(COMPONENT_BEAUTIFIED), LSTRING(savingCategory)],
-    false
+    true
 ] call CBA_fnc_addSetting;
 
 ADDON = true;

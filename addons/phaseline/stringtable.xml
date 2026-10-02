@@ -149,10 +149,6 @@
             <English>No phase is loaded.</English>
             <German>Es ist keine Phase geladen.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_othersDisabled">
-            <English>Saving other players' markers is disabled in the CBA settings.</English>
-            <German>Das Speichern der Marker anderer Spieler ist in den CBA-Einstellungen deaktiviert.</German>
-        </Key>
         <Key ID="STR_pl_Phaseline_saveDialogAll">
             <English>Also save markers that are already in a phase</English>
             <German>Auch Marker speichern, die schon in einer Phase sind</German>
@@ -174,12 +170,12 @@
             <German>Im Einzelspieler ist Speichern nur mit der Zugriffsart "ACE-Interaktion" oder "Beides" möglich (CBA-Einstellungen).</German>
         </Key>
         <Key ID="STR_pl_Phaseline_saveOthers">
-            <English>Save other players' markers</English>
-            <German>Marker anderer Spieler speichern</German>
+            <English>Show other players in the save menu</English>
+            <German>Andere Spieler im Speichern-Menü anzeigen</German>
         </Key>
         <Key ID="STR_pl_Phaseline_saveOthersDesc">
-            <English>Allows saving the markers placed by other players. The ACE menu lists each player under "Save markers", the chat command is #savemarkers --other.</English>
-            <German>Erlaubt das Speichern der Marker anderer Spieler. Das ACE-Menü listet jeden Spieler unter "Marker speichern" auf, der Chat-Befehl ist #savemarkers --other.</German>
+            <English>Lists every other player who placed markers under "Save markers" in the ACE menu, to save that player's markers. Turn this off for a shorter menu, #savemarkers --other works either way.</English>
+            <German>Listet im ACE-Menü unter "Marker speichern" jeden anderen Spieler auf, der Marker gesetzt hat, um dessen Marker zu speichern. Ausschalten für ein kürzeres Menü, #savemarkers --other geht in beiden Fällen.</German>
         </Key>
         <Key ID="STR_pl_Phaseline_saved">
             <English>Saved phase "%1" (%2 markers).</English>

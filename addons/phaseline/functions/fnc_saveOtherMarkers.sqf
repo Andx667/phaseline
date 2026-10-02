@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: Andx
- * Saves the map markers placed by other players as a phase, if that is enabled in the CBA settings.
+ * Saves the map markers placed by other players as a phase.
  * The phase is loaded like any other, the markers then belong to the loading player.
  *
  * Arguments:
@@ -24,12 +24,6 @@ params [
     ["_onlyNew", true, [true]],
     ["_owner", "", [""]]
 ];
-
-if !(missionNamespace getVariable [QGVAR(saveOthers), false]) exitWith {
-    [LLSTRING(othersDisabled)] call ace_common_fnc_displayTextStructured;
-
-    false
-};
 
 private _markersByOwner = call FUNC(getOtherMarkers);
 

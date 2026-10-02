@@ -18,7 +18,8 @@
 
 params ["_target"];
 
-if !(missionNamespace getVariable [QGVAR(saveOthers), false]) exitWith {[]};
+// Die Einstellung blendet nur diese Einträge aus, #savemarkers --other geht immer
+if !(missionNamespace getVariable [QGVAR(saveOthers), true]) exitWith {[]};
 
 private _markersByOwner = call FUNC(getOtherMarkers);
 
