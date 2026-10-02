@@ -31,7 +31,7 @@ GVAR(aceUnitEH) = ["unit", {
 
     if (isNull _unit) exitWith {};
 
-    private _menuAction = [QGVAR(accessMenu), "Phase Line", "", {true}, {true}] call ace_interact_menu_fnc_createAction;
+    private _menuAction = [QGVAR(accessMenu), QUOTE(COMPONENT_BEAUTIFIED), "", {true}, {true}] call ace_interact_menu_fnc_createAction;
     [_unit, 1, ["ACE_SelfActions"], _menuAction] call ace_interact_menu_fnc_addActionToObject;
 
     {
@@ -40,10 +40,10 @@ GVAR(aceUnitEH) = ["unit", {
         private _action = [_id, _name, "", _code, {true}] call ace_interact_menu_fnc_createAction;
         [_unit, 1, ["ACE_SelfActions", QGVAR(accessMenu)], _action] call ace_interact_menu_fnc_addActionToObject;
     } forEach [
-        [QGVAR(saveAction), "Save markers", {[] call FUNC(savePhase);}],
-        [QGVAR(loadAction), "Load markers", {[] call FUNC(loadPhase);}],
-        [QGVAR(unloadAction), "Unload markers", {[] call FUNC(unloadPhase);}],
-        [QGVAR(listAction), "List markers", {[] call FUNC(listPhases);}]
+        [QGVAR(saveAction), LLSTRING(actionSave), {[] call FUNC(savePhase);}],
+        [QGVAR(loadAction), LLSTRING(actionLoad), {[] call FUNC(loadPhase);}],
+        [QGVAR(unloadAction), LLSTRING(actionUnload), {[] call FUNC(unloadPhase);}],
+        [QGVAR(listAction), LLSTRING(actionList), {[] call FUNC(listPhases);}]
     ];
 }, true] call CBA_fnc_addPlayerEventHandler;
 
