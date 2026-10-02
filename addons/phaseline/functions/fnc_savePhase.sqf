@@ -7,6 +7,7 @@
  * Arguments:
  * 0: Phase name, defaults to "Phase N". An existing phase with the same name is overwritten. <STRING> (default: "")
  * 1: Only save markers not yet saved or loaded this session <BOOL> (default: true)
+ * 2: Markers to save instead of the markers placed by the local player <ARRAY> (default: nil)
  *
  * Return Value:
  * Phase was saved <BOOL>
@@ -19,7 +20,8 @@
 
 params [
     ["_name", "", [""]],
-    ["_onlyNew", true, [true]]
+    ["_onlyNew", true, [true]],
+    ["_markers", nil, [[]]]
 ];
 
 // Im Einzelspieler gibt es keinen Chat, dort bleibt nur das ACE-Menü
@@ -31,14 +33,17 @@ if (!isMultiplayer && {!(_mode in [ACCESS_MODE_ACE, ACCESS_MODE_ALL])}) exitWith
     false
 };
 
-// Auf einem Server sind auch die Marker anderer Spieler sichtbar, deshalb nur die eigene Spieler-ID.
-// Im Einzelspieler gehören alle gesetzten Marker dem Spieler.
-private _prefix = if (isMultiplayer) then {
-    format ["%1%2/", USER_MARKER_PREFIX, getPlayerID player]
-} else {
-    USER_MARKER_PREFIX
+if (isNil "_markers") then {
+    // Auf einem Server sind auch die Marker anderer Spieler sichtbar, deshalb nur die eigene Spieler-ID.
+    // Im Einzelspieler gehören alle gesetzten Marker dem Spieler.
+    private _prefix = if (isMultiplayer) then {
+        format ["%1%2/", USER_MARKER_PREFIX, getPlayerID player]
+    } else {
+        USER_MARKER_PREFIX
+    };
+
+    _markers = allMapMarkers select {(_x select [0, count _prefix]) isEqualTo _prefix};
 };
-private _markers = allMapMarkers select {(_x select [0, count _prefix]) isEqualTo _prefix};
 
 if (_onlyNew) then {
     _markers = _markers select {!(_x in GVAR(savedMarkers))};

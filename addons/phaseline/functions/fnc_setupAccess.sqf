@@ -40,7 +40,7 @@ GVAR(aceUnitEH) = ["unit", {
         private _action = [_id, _name, "", _code, _condition, _children] call ace_interact_menu_fnc_createAction;
         [_unit, 1, ["ACE_SelfActions", QGVAR(accessMenu)], _action] call ace_interact_menu_fnc_addActionToObject;
     } forEach [
-        [QGVAR(saveAction), LLSTRING(actionSave), {[] call FUNC(savePhase);}],
+        [QGVAR(saveAction), LLSTRING(actionSave), {[] call FUNC(savePhase);}, {true}, FUNC(aceSaveChildren)],
         // Erst im nächsten Frame, das Interaktionsmenü schließt sich noch
         [QGVAR(saveAsAction), LLSTRING(actionSaveAs), {[{createDialog QGVAR(saveDialog)}] call CBA_fnc_execNextFrame;}],
         [QGVAR(loadAction), LLSTRING(actionLoad), {[] call FUNC(loadPhase);}, {true}, FUNC(aceLoadChildren)],

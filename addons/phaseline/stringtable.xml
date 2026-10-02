@@ -45,6 +45,10 @@
             <English>Save markers as...</English>
             <German>Marker speichern unter...</German>
         </Key>
+        <Key ID="STR_pl_Phaseline_actionSaveOthers">
+            <English>All other players</English>
+            <German>Alle anderen Spieler</German>
+        </Key>
         <Key ID="STR_pl_Phaseline_actionUnload">
             <English>Unload markers</English>
             <German>Marker entladen</German>
@@ -145,6 +149,10 @@
             <English>No phase is loaded.</English>
             <German>Es ist keine Phase geladen.</German>
         </Key>
+        <Key ID="STR_pl_Phaseline_othersDisabled">
+            <English>Saving other players' markers is disabled in the CBA settings.</English>
+            <German>Das Speichern der Marker anderer Spieler ist in den CBA-Einstellungen deaktiviert.</German>
+        </Key>
         <Key ID="STR_pl_Phaseline_saveDialogAll">
             <English>Also save markers that are already in a phase</English>
             <German>Auch Marker speichern, die schon in einer Phase sind</German>
@@ -165,9 +173,21 @@
             <English>In singleplayer, saving needs the access mode "ACE interaction" or "Both" (CBA settings).</English>
             <German>Im Einzelspieler ist Speichern nur mit der Zugriffsart "ACE-Interaktion" oder "Beides" möglich (CBA-Einstellungen).</German>
         </Key>
+        <Key ID="STR_pl_Phaseline_saveOthers">
+            <English>Save other players' markers</English>
+            <German>Marker anderer Spieler speichern</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_saveOthersDesc">
+            <English>Allows saving the markers placed by other players. The ACE menu lists each player under "Save markers", the chat command is #savemarkers --other.</English>
+            <German>Erlaubt das Speichern der Marker anderer Spieler. Das ACE-Menü listet jeden Spieler unter "Marker speichern" auf, der Chat-Befehl ist #savemarkers --other.</German>
+        </Key>
         <Key ID="STR_pl_Phaseline_saved">
             <English>Saved phase "%1" (%2 markers).</English>
             <German>Phase "%1" gespeichert (%2 Marker).</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_savingCategory">
+            <English>Saving</English>
+            <German>Speichern</German>
         </Key>
         <Key ID="STR_pl_Phaseline_skippedDrawings">
             <English>%1 drawn lines skipped, drawing is disabled on this channel.</English>
@@ -176,6 +196,10 @@
         <Key ID="STR_pl_Phaseline_tooManyMarkers">
             <English>Too many markers to save (%1, maximum %2).</English>
             <German>Zu viele Marker zum Speichern (%1, maximal %2).</German>
+        </Key>
+        <Key ID="STR_pl_Phaseline_unknownPlayer">
+            <English>Unknown player (%1)</English>
+            <German>Unbekannter Spieler (%1)</German>
         </Key>
         <Key ID="STR_pl_Phaseline_unloaded">
             <English>Removed phase "%1" (%2 markers).</English>

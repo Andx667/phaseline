@@ -8,11 +8,12 @@
  * 1: Treat a trailing channel name or "local" as channel instead of text <BOOL> (default: false)
  *
  * Return Value:
- * [text, channel, local, all] <ARRAY>
+ * [text, channel, local, all, other] <ARRAY>
  * - text: remaining text (phase name or number) <STRING>
  * - channel: channel name, -1 if none was given <STRING, NUMBER>
  * - local: "local" was given as channel <BOOL>
  * - all: "--all" flag was given <BOOL>
+ * - other: "--other" flag was given <BOOL>
  *
  * Example:
  * ["Phase 1 group", true] call pl_phaseline_fnc_parseArgs
@@ -28,7 +29,8 @@ params [
 private _tokens = _input splitString " ";
 
 private _all = _tokens findIf {toLower _x == "--all"} != -1;
-_tokens = _tokens select {toLower _x != "--all"};
+private _other = _tokens findIf {toLower _x == "--other"} != -1;
+_tokens = _tokens select {!(toLower _x in ["--all", "--other"])};
 
 private _channel = -1;
 private _local = false;
@@ -46,4 +48,4 @@ if (_parseChannel && {_tokens isNotEqualTo []}) then {
     };
 };
 
-[_tokens joinString " ", _channel, _local, _all] // return
+[_tokens joinString " ", _channel, _local, _all, _other] // return

@@ -29,4 +29,12 @@ GVAR(playerMarkerIdx) = 0;
     }
 ] call CBA_fnc_addSetting;
 
+[
+    QGVAR(saveOthers),
+    "CHECKBOX",
+    [LSTRING(saveOthers), LSTRING(saveOthersDesc)],
+    [QUOTE(COMPONENT_BEAUTIFIED), LSTRING(savingCategory)],
+    false
+] call CBA_fnc_addSetting;
+
 ADDON = true;
