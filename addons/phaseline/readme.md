@@ -1,6 +1,6 @@
 # Marker-Phasen
 
-Speichert die vom Spieler gesetzten Kartenmarker als benannte "Phasen" im eigenen Profil (`profileNamespace`) und lädt sie später auf derselben Karte wieder. Gedacht, um in der lokalen Multiplayer-Vorschau (Eden) eine Planung vorzubereiten und sie im echten Multiplayer Phase für Phase auf die Karte zu bringen. Gespeichert werden kann in jedem Multiplayer, also auch auf einem Server. Die Bedienung ist über CBA-Einstellungen konfigurierbar und unterstützt ACE-Interaktion, Chat-Befehle (`#savemarkers`, `#loadmarkers`, `#unloadmarkers`, `#listmarkers`, `#deletemarkers`). Die Bedienung ist in der [README](../../README.md) beschrieben.
+Speichert die vom Spieler gesetzten Kartenmarker als benannte "Phasen" im eigenen Profil (`profileNamespace`) und lädt sie später auf derselben Karte wieder. Gedacht, um in der lokalen Multiplayer-Vorschau (Eden) eine Planung vorzubereiten und sie im echten Multiplayer Phase für Phase auf die Karte zu bringen. Gespeichert werden kann in jedem Multiplayer, also auch auf einem Server, und im Einzelspieler über das ACE-Menü. Die Bedienung ist über CBA-Einstellungen konfigurierbar und unterstützt ACE-Interaktion, Chat-Befehle (`#savemarkers`, `#loadmarkers`, `#unloadmarkers`, `#listmarkers`, `#deletemarkers`). Die Bedienung ist in der [README](../../README.md) beschrieben.
 
 ## Abhängigkeiten
 
@@ -17,7 +17,7 @@ Gespeichert werden nur Marker, deren Name mit `_USER_DEFINED #<Spieler-ID>/` beg
 
 ## Speichern
 
-`fnc_savePhase` ist nur im Multiplayer erlaubt (`isMultiplayer`), die Eden-Vorschau zählt dazu. Der reine Einzelspieler fällt bewusst weg: Dort gibt es keinen Chat für die Befehle. Weil auf einem Server auch die Marker anderer Spieler in `allMapMarkers` stehen, wird nur nach dem Präfix `_USER_DEFINED #<getPlayerID player>/` gefiltert (Format aus `fnc_createPlayerMarker`).
+`fnc_savePhase` ist im Multiplayer immer erlaubt (`isMultiplayer`), die Eden-Vorschau zählt dazu. Im Einzelspieler gibt es keinen Chat für die Befehle, deshalb speichert die Funktion dort nur, wenn die Zugriffsart das ACE-Menü einschließt. Weil auf einem Server auch die Marker anderer Spieler in `allMapMarkers` stehen, wird im Multiplayer nur nach dem Präfix `_USER_DEFINED #<getPlayerID player>/` gefiltert (Format aus `fnc_createPlayerMarker`). Im Einzelspieler gehören alle `_USER_DEFINED`-Marker dem Spieler, dort reicht `_USER_DEFINED #`.
 
 Die Rückmeldungen erscheinen als ACE-Hint (`ace_common_fnc_displayTextStructured`), weil der Chat mit Clear HUD ausgeblendet ist. Mehrzeilige Ausgaben (`#listmarkers`, Ladeergebnis) gehen als ein einziger Hint raus, da jeder neue Hint den vorherigen ersetzt.
 
@@ -27,7 +27,7 @@ Standardmäßig werden nur Marker gespeichert, die in dieser Sitzung noch in kei
 
 ## Laden
 
-Die Marker werden lokal angelegt (`createMarkerLocal` über `fnc_createPlayerMarker`), alle Eigenschaften lokal gesetzt und zuletzt mit `setMarkerAlpha` einmal global gesendet. Das ist der Weg, den auch Tagging2Map nutzt, und laut Arma-Wiki der empfohlene, um den Marker nur einmal komplett über das Netzwerk zu schicken. Lokale Marker (`local`) überspringen den globalen Befehl und bleiben beim Spieler.
+Die Marker werden lokal angelegt (`createMarkerLocal` über `fnc_createPlayerMarker`), alle Eigenschaften lokal gesetzt und zuletzt mit `setMarkerAlpha` einmal global gesendet. Das ist der Weg, den auch Tagging2Map nutzt, und laut Arma-Wiki der empfohlene, um den Marker nur einmal komplett über das Netzwerk zu schicken. Lokale Marker (`local`) überspringen den globalen Befehl und bleiben beim Spieler. Im Einzelspieler lädt `fnc_loadPhase` immer lokal, die Kanalprüfung entfällt.
 
 Pro Frame werden `MARKERS_PER_FRAME` Marker erzeugt (CBA-PFH), damit große Phasen keinen Netzwerk-Schub auslösen. Entlädt der Spieler die Phase währenddessen, beendet der PFH sich selbst.
 

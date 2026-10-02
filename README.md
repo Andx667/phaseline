@@ -50,7 +50,7 @@ The ACE self-interaction menu "Phase Line" has the same functions:
 - __List markers__ lists the saved phases of the current map.
 - __Delete phase__ lists the saved phases, each with a "Confirm" entry that deletes it.
 
-Saving works in any multiplayer session, including the local multiplayer preview. Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
+Saving works in any multiplayer session, including the local multiplayer preview. Singleplayer has no chat, so there Phase Line works once the access mode is set to ACE interaction or both. Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
 
 ## Contributing
 
