@@ -25,6 +25,14 @@ Nach jedem erfolgreichen Speichern legt `fnc_addDiaryRecord` einen Tagebucheintr
 
 Standardmäßig werden nur Marker gespeichert, die in dieser Sitzung noch in keiner Phase waren (`GVAR(savedMarkers)`, ein Set der Markernamen). Das macht den Phasenablauf aus: Phase 1 zeichnen, speichern, Phase 2 zeichnen, speichern - ohne dass Phase 1 doppelt landet. Auch aus einer Phase geladene Marker werden dort eingetragen. `--all` ignoriert das Set. Ein gleichnamiger Eintrag wird überschrieben, mehr als `MAX_MARKERS_PER_PHASE` Marker werden abgelehnt, statt still abzuschneiden.
 
+## Marker anderer Spieler
+
+`fnc_saveOtherMarkers` speichert Marker, die andere Spieler gesetzt haben. `fnc_getOtherMarkers` gruppiert dafür alle `_USER_DEFINED`-Marker nach der Spieler-ID aus dem Markernamen und lässt die eigenen weg. Gefunden wird nur, was der eigene Client kennt, also keine Marker aus Kanälen, in denen der Spieler nicht ist.
+
+`#savemarkers --other` speichert die Marker aller anderen Spieler zusammen, mit den üblichen Regeln für Name und `--all`. Das ACE-Menü zeigt unter "Marker speichern" einen Eintrag pro Spieler. Die CBA-Einstellung `pl_phaseline_saveOthers` (standardmäßig an) blendet nur diese Einträge aus, der Chat-Befehl bleibt davon unberührt. Dessen Phase heißt wie der Spieler (`fnc_getPlayerName`, über `allPlayers` und `getPlayerID`) und enthält immer alle seine Marker statt nur der neuen, weil ein erneutes Speichern die Phase gleichen Namens überschreibt. Hat der Spieler den Server verlassen, gibt es zu seiner ID keinen Namen mehr, die Phase heißt dann "Unbekannter Spieler (ID)". Das gilt auch für eigene Marker von vor einem Reconnect, da die ID pro Verbindung vergeben wird.
+
+Die Phase ist eine ganz normale: Beim Laden gehören die Marker dem ladenden Spieler und landen auf dem gewählten Kanal, der ursprüngliche Kanal wird nicht gespeichert.
+
 ## Laden
 
 Die Marker werden lokal angelegt (`createMarkerLocal` über `fnc_createPlayerMarker`), alle Eigenschaften lokal gesetzt und zuletzt mit `setMarkerAlpha` einmal global gesendet. Das ist der Weg, den auch Tagging2Map nutzt, und laut Arma-Wiki der empfohlene, um den Marker nur einmal komplett über das Netzwerk zu schicken. Lokale Marker (`local`) überspringen den globalen Befehl und bleiben beim Spieler. Im Einzelspieler lädt `fnc_loadPhase` immer lokal, die Kanalprüfung entfällt.

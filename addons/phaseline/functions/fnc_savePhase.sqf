@@ -7,6 +7,7 @@
  * Arguments:
  * 0: Phase name, defaults to "Phase N". An existing phase with the same name is overwritten. <STRING> (default: "")
  * 1: Only save markers not yet saved or loaded this session <BOOL> (default: true)
+ * 2: Markers to save instead of the markers placed by the local player <ARRAY> (default: nil)
  *
  * Return Value:
  * Phase was saved <BOOL>
@@ -19,7 +20,8 @@
 
 params [
     ["_name", "", [""]],
-    ["_onlyNew", true, [true]]
+    ["_onlyNew", true, [true]],
+    ["_markers", nil, [[]]]
 ];
 
 // Im Einzelspieler gibt es keinen Chat, dort bleibt nur das ACE-Menü
@@ -31,7 +33,9 @@ if (!isMultiplayer && {!(_mode in [ACCESS_MODE_ACE, ACCESS_MODE_ALL])}) exitWith
     false
 };
 
-private _markers = call FUNC(getOwnMarkers);
+if (isNil "_markers") then {
+    _markers = call FUNC(getOwnMarkers);
+};
 
 if (_onlyNew) then {
     _markers = _markers select {!(_x in GVAR(savedMarkers))};
