@@ -16,6 +16,7 @@ version, and start a fresh empty [Unreleased] section above it. -->
 ### Added
 
 - The ACE self-interaction menu now covers everything the chat commands do: saving under a name or with every marker, loading a chosen phase on a chosen channel or locally, unloading a chosen phase, and deleting a phase.
+- Singleplayer support: with the access mode set to ACE interaction or both, phases can be saved in singleplayer.
 
 ### Fixed
 

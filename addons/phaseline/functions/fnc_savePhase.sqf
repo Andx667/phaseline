@@ -2,7 +2,7 @@
 /*
  * Author: Andx
  * Saves the user placed map markers as a phase of the current map to the player's profile.
- * Only possible in multiplayer (Eden preview or server), not in singleplayer.
+ * In singleplayer this needs the ACE interaction access mode, there is no chat for the commands.
  *
  * Arguments:
  * 0: Phase name, defaults to "Phase N". An existing phase with the same name is overwritten. <STRING> (default: "")
@@ -22,7 +22,10 @@ params [
     ["_onlyNew", true, [true]]
 ];
 
-if (!isMultiplayer) exitWith {
+// Im Einzelspieler gibt es keinen Chat, dort bleibt nur das ACE-Menü
+private _mode = missionNamespace getVariable [QGVAR(accessMode), ACCESS_MODE_CHAT];
+
+if (!isMultiplayer && {!(_mode in [ACCESS_MODE_ACE, ACCESS_MODE_ALL])}) exitWith {
     [LLSTRING(saveNotAllowed)] call ace_common_fnc_displayTextStructured;
 
     false

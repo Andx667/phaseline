@@ -21,7 +21,7 @@ The system can be accessed through several modes. The default is chat commands, 
 - **#listmarkers** lists the saved phases of the current map.
 - **#deletemarkers** followed by a phase name deletes that saved phase from your profile.
 
-Saving works in any multiplayer session, including the local multiplayer preview. Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
+Saving works in any multiplayer session, including the local multiplayer preview. Singleplayer has no chat, so there Phase Line works once the access mode is set to ACE interaction or both. Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
 
 # Source & Issues
 

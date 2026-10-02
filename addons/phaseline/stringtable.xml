@@ -162,8 +162,8 @@
             <German>Marker als Phase speichern</German>
         </Key>
         <Key ID="STR_pl_Phaseline_saveNotAllowed">
-            <English>Saving is only possible in multiplayer, not in singleplayer.</English>
-            <German>Speichern ist nur im Multiplayer möglich, nicht im Einzelspieler.</German>
+            <English>In singleplayer, saving needs the access mode "ACE interaction" or "Both" (CBA settings).</English>
+            <German>Im Einzelspieler ist Speichern nur mit der Zugriffsart "ACE-Interaktion" oder "Beides" möglich (CBA-Einstellungen).</German>
         </Key>
         <Key ID="STR_pl_Phaseline_saved">
             <English>Saved phase "%1" (%2 markers).</English>

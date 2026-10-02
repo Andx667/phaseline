@@ -7,7 +7,7 @@
  * Arguments:
  * 0: Phase name or 1-based position, -1 for the first phase not yet loaded <STRING, NUMBER> (default: -1)
  * 1: Channel name or ID, -1 for the default channel (falls back to the first channel allowing markers) <STRING, NUMBER> (default: -1)
- * 2: Only show the markers locally, do not broadcast them <BOOL> (default: false)
+ * 2: Only show the markers locally, do not broadcast them. Always the case in singleplayer. <BOOL> (default: false)
  *
  * Return Value:
  * Loading was started <BOOL>
@@ -51,6 +51,11 @@ if (([_name] call FUNC(getLoadedIndex)) != -1) exitWith {
     [format [LLSTRING(alreadyLoaded), _name]] call ace_common_fnc_displayTextStructured;
 
     false
+};
+
+// Im Einzelspieler gibt es niemanden, an den gesendet wird, die Kanalregeln spielen dort keine Rolle
+if (!isMultiplayer) then {
+    _local = true;
 };
 
 private _useDefault = _channel isEqualTo -1;
