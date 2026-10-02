@@ -13,6 +13,10 @@ version, and start a fresh empty [Unreleased] section above it. -->
 
 ## [Unreleased]
 
+### Added
+
+- The ACE self-interaction menu now covers everything the chat commands do: saving under a name or with every marker, loading a chosen phase on a chosen channel or locally, unloading a chosen phase, and deleting a phase.
+
 ### Fixed
 
 - The access mode setting, the ACE interaction entries and the "chat commands are disabled" message are now translated instead of always being shown in English.

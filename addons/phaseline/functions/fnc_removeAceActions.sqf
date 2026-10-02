@@ -22,6 +22,6 @@ if (isNull _unit) exitWith {};
 
 {
     [_unit, 1, ["ACE_SelfActions", QGVAR(accessMenu), _x]] call ace_interact_menu_fnc_removeActionFromObject;
-} forEach [QGVAR(saveAction), QGVAR(loadAction), QGVAR(unloadAction), QGVAR(listAction)];
+} forEach [QGVAR(saveAction), QGVAR(saveAsAction), QGVAR(loadAction), QGVAR(unloadAction), QGVAR(listAction), QGVAR(deleteAction)];
 
 [_unit, 1, ["ACE_SelfActions", QGVAR(accessMenu)]] call ace_interact_menu_fnc_removeActionFromObject;

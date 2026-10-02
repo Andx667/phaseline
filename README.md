@@ -34,13 +34,21 @@ Discord: <https://discord.gg/ag4v6kxYAa>
 
 ## Features
 
-The system can be accessed through several modes. The default is chat commands, but you can switch the access mode from the CBA settings menu to ACE interaction or both. The ACE self-interaction menu "Phase Line" offers save, load, unload and list with default settings (no names, channels or deleting; use the chat commands for those).
+The system can be accessed through several modes. The default is chat commands, but you can switch the access mode from the CBA settings menu to ACE interaction or both. Both offer the same features.
 
 - `#savemarkers [name]` saves your markers (including drawn lines) as a new phase. By default only markers that are not yet in any phase are saved, so you can draw phase 1, save, draw phase 2, save. `--all` saves every marker. An existing name is overwritten.
 - `#loadmarkers [phase] [channel]` recreates a phase on the current map. Without arguments the next phase that isn't on the map yet is loaded. `channel` is `global`, `side`, `command`, `group`, `vehicle` or `direct` (default: side); `local` shows the markers only to you.
 - `#unloadmarkers [phase]` removes the markers of a loaded phase again.
 - `#listmarkers` lists the saved phases of the current map.
 - `#deletemarkers <phase>` deletes a saved phase from your profile.
+
+The ACE self-interaction menu "Phase Line" has the same functions:
+
+- __Save markers__ saves the new markers under the next free default name. __Save markers as...__ opens a dialog for the name and for saving every marker.
+- __Load markers__ loads the next phase. Its sub-menu lists the phases that are not loaded yet; selecting one loads it on the default channel, its own sub-menu picks the channel or "Local only".
+- __Unload markers__ removes the most recently loaded phase, its sub-menu lists every loaded phase.
+- __List markers__ lists the saved phases of the current map.
+- __Delete phase__ lists the saved phases, each with a "Confirm" entry that deletes it.
 
 Saving works in any multiplayer session, including the local multiplayer preview. Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
 

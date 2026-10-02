@@ -1,11 +1,16 @@
+PREP(aceDeleteChildren);
+PREP(aceLoadChildren);
+PREP(aceUnloadChildren);
 PREP(addDiaryRecord);
 PREP(chatEnabled);
 PREP(createPlayerMarker);
 PREP(deletePhase);
 PREP(getLoadedIndex);
+PREP(getPhaseNames);
 PREP(getPhases);
 PREP(listPhases);
 PREP(loadPhase);
+PREP(onSaveDialogUnload);
 PREP(parseArgs);
 PREP(removeAceActions);
 PREP(resolvePhase);

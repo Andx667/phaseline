@@ -33,6 +33,14 @@ Pro Frame werden `MARKERS_PER_FRAME` Marker erzeugt (CBA-PFH), damit große Phas
 
 Der Kanal kommt aus dem Befehl oder ist `DEFAULT_CHANNEL`. Ohne expliziten Kanal wird auf den ersten Kanal ausgewichen, der Marker erlaubt (`channelEnabled` Index 2, ab Arma 2.20). Gezeichnete Linien werden übersprungen, wenn der Kanal Zeichnen verbietet (Index 3).
 
+## ACE-Menü
+
+`fnc_setupAccess` hängt das Menü "Phase Line" an die Einheit des Spielers. Die Einträge mit festem Inhalt (Speichern, Speichern unter, Auflisten) sind normale Aktionen, die Listen der Phasen entstehen über `insertChildren` (`fnc_aceLoadChildren`, `fnc_aceUnloadChildren`, `fnc_aceDeleteChildren`). ACE baut den Baum höchstens einmal pro Sekunde neu, solange das Menü offen ist. Deshalb liest `fnc_getPhaseNames` nur die Namen aus dem Profil, ohne die Marker zu kopieren.
+
+Unter "Laden" hat jede noch nicht geladene Phase einen Eintrag pro Kanal, der Marker erlaubt, und "Nur lokal". Der Eintrag der Phase selbst lädt auf dem Standardkanal. Unter "Löschen" löst erst der Untereintrag "Bestätigen" aus, weil das Menü beim Loslassen der Taste den Eintrag unter dem Cursor ausführt.
+
+"Speichern unter" öffnet den Dialog `pl_phaseline_saveDialog` (`ui/saveDialog.hpp`) mit Namensfeld und der Checkbox für `--all`. Gespeichert wird im `onUnload` (`fnc_onSaveDialogUnload`), wenn der Dialog über OK geschlossen wurde.
+
 ## Maintainer
 
 - Andx

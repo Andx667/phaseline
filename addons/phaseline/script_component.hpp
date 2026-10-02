@@ -18,3 +18,8 @@
 #define ACCESS_MODE_ACE 0
 #define ACCESS_MODE_CHAT 1
 #define ACCESS_MODE_ALL 2
+
+#define IDC_SAVE_NAME 1400
+#define IDC_SAVE_ALL 2800
+// Exit-Code eines Displays, das über den OK-Button (idc 1) geschlossen wurde
+#define EXIT_CODE_OK 1
