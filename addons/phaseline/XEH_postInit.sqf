@@ -6,7 +6,7 @@ if (!hasInterface) exitWith {};
 ["savemarkers", {
     if !(call FUNC(chatEnabled)) exitWith {};
     params ["_input"];
-    ([_input] call FUNC(parseArgs)) params ["_name", "", "", "_all", "_other"];
+    ([_input, false, true] call FUNC(parseArgs)) params ["_name", "", "", "_all", "_other"];
 
     if (_other) exitWith {
         [_name, !_all] call FUNC(saveOtherMarkers);

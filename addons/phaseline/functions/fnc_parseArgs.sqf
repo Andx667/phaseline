@@ -6,6 +6,7 @@
  * Arguments:
  * 0: Argument text of the chat command <STRING>
  * 1: Treat a trailing channel name or "local" as channel instead of text <BOOL> (default: false)
+ * 2: Treat "--all" and "--other" as flags of #savemarkers instead of text <BOOL> (default: false)
  *
  * Return Value:
  * [text, channel, local, all, other] <ARRAY>
@@ -23,14 +24,21 @@
 
 params [
     ["_input", "", [""]],
-    ["_parseChannel", false, [true]]
+    ["_parseChannel", false, [true]],
+    ["_parseSaveFlags", false, [true]]
 ];
 
 private _tokens = _input splitString " ";
 
-private _all = _tokens findIf {toLower _x == "--all"} != -1;
-private _other = _tokens findIf {toLower _x == "--other"} != -1;
-_tokens = _tokens select {!(toLower _x in ["--all", "--other"])};
+private _all = false;
+private _other = false;
+
+// Die Flags gehören nur zu #savemarkers, bei den anderen Befehlen bleiben sie Teil des Phasennamens
+if (_parseSaveFlags) then {
+    _all = _tokens findIf {toLower _x == "--all"} != -1;
+    _other = _tokens findIf {toLower _x == "--other"} != -1;
+    _tokens = _tokens select {!(toLower _x in ["--all", "--other"])};
+};
 
 private _channel = -1;
 private _local = false;
