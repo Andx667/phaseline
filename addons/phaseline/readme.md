@@ -39,7 +39,7 @@ Der Kanal kommt aus dem Befehl oder ist `DEFAULT_CHANNEL`. Ohne expliziten Kanal
 
 Unter "Laden" hat jede noch nicht geladene Phase einen Eintrag pro Kanal, der Marker erlaubt, und "Nur lokal". Der Eintrag der Phase selbst lädt auf dem Standardkanal. Unter "Löschen" löst erst der Untereintrag "Bestätigen" aus, weil das Menü beim Loslassen der Taste den Eintrag unter dem Cursor ausführt.
 
-"Speichern unter" öffnet den Dialog `pl_phaseline_saveDialog` (`ui/saveDialog.hpp`) mit Namensfeld und der Checkbox für `--all`. Gespeichert wird im `onUnload` (`fnc_onSaveDialogUnload`), wenn der Dialog über OK geschlossen wurde.
+"Speichern unter" öffnet den Dialog `pl_phaseline_saveDialog` (`ui/saveDialog.hpp`) mit Namensfeld und der Checkbox für `--all`. Gibt es beim Öffnen keine neuen Marker, ist die Checkbox vorausgewählt (`fnc_onSaveDialogLoad`), sonst würde ein zweiter Name für schon gespeicherte Marker nichts speichern. Gespeichert wird im `onUnload` (`fnc_onSaveDialogUnload`), wenn der Dialog über OK geschlossen wurde.
 
 ## Maintainer
 
