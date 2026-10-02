@@ -28,9 +28,7 @@ if (!isMultiplayer) exitWith {
     false
 };
 
-// Auf einem Server sind auch die Marker anderer Spieler sichtbar, deshalb nur die eigene Spieler-ID
-private _prefix = format ["%1%2/", USER_MARKER_PREFIX, getPlayerID player];
-private _markers = allMapMarkers select {(_x select [0, count _prefix]) isEqualTo _prefix};
+private _markers = call FUNC(getOwnMarkers);
 
 if (_onlyNew) then {
     _markers = _markers select {!(_x in GVAR(savedMarkers))};
