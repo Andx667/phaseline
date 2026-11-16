@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_target"];
+params [["_target", objNull, [objNull]]];
 
 // Die Einstellung blendet nur diese Einträge aus, #savemarkers --other geht immer
 if !(missionNamespace getVariable [QGVAR(saveOthers), true]) exitWith {[]};

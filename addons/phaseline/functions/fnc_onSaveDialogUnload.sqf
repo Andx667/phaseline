@@ -16,7 +16,10 @@
  * Public: No
  */
 
-params ["_display", "_exitCode"];
+params [
+    ["_display", displayNull, [displayNull]],
+    ["_exitCode", 0, [0]]
+];
 
 if (_exitCode != EXIT_CODE_OK) exitWith {};
 

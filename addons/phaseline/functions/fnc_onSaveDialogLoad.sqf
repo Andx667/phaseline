@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_display"];
+params [["_display", displayNull, [displayNull]]];
 
 // Ohne neue Marker gäbe es nichts zu speichern, ein zweiter Name für dieselben Marker braucht dann alle
 private _hasNew = (call FUNC(getOwnMarkers)) findIf {!(_x in GVAR(savedMarkers))} != -1;

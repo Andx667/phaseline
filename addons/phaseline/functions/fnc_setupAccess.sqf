@@ -1,4 +1,20 @@
 #include "..\script_component.hpp"
+/*
+ * Author: Andx
+ * Adds or removes the ACE self-interaction menu according to the access mode setting.
+ * Called again whenever the setting changes, so it first removes what an earlier call added.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [] call pl_phaseline_fnc_setupAccess
+ *
+ * Public: No
+ */
 
 if !(hasInterface) exitWith {};
 
@@ -19,7 +35,6 @@ if !(isNil QGVAR(aceActionUnit)) then {
 };
 
 if !(_mode in [ACCESS_MODE_ACE, ACCESS_MODE_ALL]) exitWith {};
-if !(isClass (configFile >> "CfgPatches" >> "ace_interact_menu")) exitWith {};
 
 // Aktionen hängen am Objekt, deshalb bei jedem Einheitenwechsel (Respawn, Teamswitch) neu setzen
 GVAR(aceUnitEH) = ["unit", {
@@ -49,5 +64,3 @@ GVAR(aceUnitEH) = ["unit", {
         [QGVAR(deleteAction), LLSTRING(actionDelete), {}, {(call FUNC(getPhaseNames)) isNotEqualTo []}, FUNC(aceDeleteChildren)]
     ];
 }, true] call CBA_fnc_addPlayerEventHandler;
-
-true
