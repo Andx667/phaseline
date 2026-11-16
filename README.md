@@ -55,6 +55,108 @@ Saving works in any multiplayer session, including the local multiplayer preview
 
 Phases are stored per player in the Arma profile and per map. At most 500 markers fit in one phase.
 
+## Settings
+
+Both are client settings in CBA settings, category "Phase Line", so each player sets them for themselves.
+
+- __Access mode__ (`pl_phaseline_accessMode`): chat commands (default), ACE interaction or both.
+- __Show other players in the save menu__ (`pl_phaseline_saveOthers`, on by default): shows the per-player entries under "Save markers" in the ACE menu. `#savemarkers --other` works either way.
+
+## Functions for missions and other mods
+
+The chat commands and ACE entries call these functions, so missions and other mods can use them too. All of them work only on the client that calls them: they read and write that player's profile and show their result as a hint to that player. Call them where `hasInterface` is true, for example from a client's `initPlayerLocal.sqf` or an addAction, not on a dedicated server. Phases are always those of the current map.
+
+A phase can be given by name or by its 1-based position in the `#listmarkers` list.
+
+### `pl_phaseline_fnc_savePhase`
+
+Saves the local player's markers as a phase. An existing phase with the same name is overwritten. In singleplayer it only saves when the access mode includes ACE interaction.
+
+| # | Argument | Default |
+| --- | --- | --- |
+| 0 | Phase name (string), empty for the next free "Phase N" | `""` |
+| 1 | Only save markers that are not in a phase yet this session (bool) | `true` |
+| 2 | Markers to save instead of the player's own (array of marker names) | own markers |
+
+Returns `true` if the phase was saved.
+
+```sqf
+["Phase 1"] call pl_phaseline_fnc_savePhase;
+["Full plan", false] call pl_phaseline_fnc_savePhase;
+```
+
+### `pl_phaseline_fnc_saveOtherMarkers`
+
+Saves the markers that other players placed and the local client knows about as a phase.
+
+| # | Argument | Default |
+| --- | --- | --- |
+| 0 | Phase name (string), empty for the player's name (with a player ID) or the next "Phase N" | `""` |
+| 1 | Only save markers that are not in a phase yet this session (bool) | `true` |
+| 2 | Player ID (`getPlayerID`) whose markers to save (string), empty for all other players | `""` |
+
+Returns `true` if the phase was saved.
+
+```sqf
+[] call pl_phaseline_fnc_saveOtherMarkers;
+["", false, getPlayerID _unit] call pl_phaseline_fnc_saveOtherMarkers;
+```
+
+### `pl_phaseline_fnc_loadPhase`
+
+Recreates a phase as the local player's own markers. The markers are created a few per frame and, unless loaded locally, sent to everyone on the chosen channel. In singleplayer they are always local.
+
+| # | Argument | Default |
+| --- | --- | --- |
+| 0 | Phase (string or number), `-1` for the first phase that is not loaded yet | `-1` |
+| 1 | Channel name (`"global"`, `"side"`, `"command"`, `"group"`, `"vehicle"`, `"direct"`) or ID (string or number), `-1` for side or the first channel that allows markers | `-1` |
+| 2 | Only show the markers to the local player (bool) | `false` |
+
+Returns `true` if loading started.
+
+```sqf
+[] call pl_phaseline_fnc_loadPhase;
+["Phase 2", "group"] call pl_phaseline_fnc_loadPhase;
+[1, -1, true] call pl_phaseline_fnc_loadPhase;
+```
+
+### `pl_phaseline_fnc_unloadPhase`
+
+Deletes the markers of a phase loaded this session.
+
+| # | Argument | Default |
+| --- | --- | --- |
+| 0 | Phase (string or number), `-1` for the most recently loaded phase | `-1` |
+
+Returns `true` if a phase was unloaded.
+
+```sqf
+[] call pl_phaseline_fnc_unloadPhase;
+["Phase 2"] call pl_phaseline_fnc_unloadPhase;
+```
+
+### `pl_phaseline_fnc_listPhases`
+
+Shows the saved phases as a hint. No arguments. Returns `true` if there is at least one phase.
+
+```sqf
+[] call pl_phaseline_fnc_listPhases;
+```
+
+### `pl_phaseline_fnc_deletePhase`
+
+Deletes a saved phase from the profile. Its markers stay on the map if it is loaded.
+
+| # | Argument | Default |
+| --- | --- | --- |
+| 0 | Phase (string or number) | `""` |
+
+Returns `true` if the phase was deleted.
+
+```sqf
+["Phase 1"] call pl_phaseline_fnc_deletePhase;
+```
+
 ## Contributing
 
 For new contributors, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).

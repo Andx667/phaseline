@@ -18,9 +18,6 @@
  * Public: No
  */
 
-#define CHANNEL_MIN 0
-#define CHANNEL_MAX 5
-
 params [
     ["_position", [0, 0, 0], [[], objNull]],
     ["_channel", 1, [0, ""]],
@@ -41,6 +38,6 @@ private _id = format ["%1_%2", QUOTE(PREFIX), GVAR(playerMarkerIdx)];
 GVAR(playerMarkerIdx) = GVAR(playerMarkerIdx) + 1;
 
 // Der Name im Format der Engine, damit der Spieler den Marker selbst löschen kann
-private _markerId = format ["_USER_DEFINED #%1/%2/%3", getPlayerID _player, _id, _channel];
+private _markerId = format ["%1%2/%3/%4", USER_MARKER_PREFIX, getPlayerID _player, _id, _channel];
 
 createMarkerLocal [_markerId, _position, _channel, _player] // return
