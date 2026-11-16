@@ -13,6 +13,10 @@ version, and start a fresh empty [Unreleased] section above it. -->
 
 ## [Unreleased]
 
+### Changed
+
+* Phase Line - Change the "chat commands are disabled" message to an ACE hint, so it is visible with the chat hidden (#16) by Andx667
+
 ## [1.1.0] - 2026-10-02
 
 The ACE menu now does everything the chat commands do, Phase Line works in singleplayer, and other players' markers can be saved.
