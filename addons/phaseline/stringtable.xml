@@ -1,203 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="pl">
-    <Package name="Phaseline">
-        <Key ID="STR_pl_Phaseline_accessCategory">
+    <Package name="phaseline">
+        <Key ID="STR_pl_phaseline_accessCategory">
             <English>Access</English>
             <German>Zugriff</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_accessMode">
+        <Key ID="STR_pl_phaseline_accessMode">
             <English>Access mode</English>
             <German>Zugriffsart</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_accessModeAce">
+        <Key ID="STR_pl_phaseline_accessModeAce">
             <English>ACE interaction</English>
             <German>ACE-Interaktion</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_accessModeAll">
+        <Key ID="STR_pl_phaseline_accessModeAll">
             <English>Both</English>
             <German>Beides</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_accessModeChat">
+        <Key ID="STR_pl_phaseline_accessModeChat">
             <English>Chat commands</English>
             <German>Chat-Befehle</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_accessModeDesc">
+        <Key ID="STR_pl_phaseline_accessModeDesc">
             <English>Choose how to access Phase Line.</English>
             <German>Legt fest, wie Phase Line bedient wird.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_actionDelete">
+        <Key ID="STR_pl_phaseline_actionDelete">
             <English>Delete phase</English>
             <German>Phase löschen</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_actionList">
+        <Key ID="STR_pl_phaseline_actionList">
             <English>List markers</English>
             <German>Marker auflisten</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_actionLoad">
+        <Key ID="STR_pl_phaseline_actionLoad">
             <English>Load markers</English>
             <German>Marker laden</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_actionSave">
+        <Key ID="STR_pl_phaseline_actionSave">
             <English>Save markers</English>
             <German>Marker speichern</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_actionSaveAs">
+        <Key ID="STR_pl_phaseline_actionSaveAs">
             <English>Save markers as...</English>
             <German>Marker speichern unter...</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_actionSaveOthers">
+        <Key ID="STR_pl_phaseline_actionSaveOthers">
             <English>All other players</English>
             <German>Alle anderen Spieler</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_actionUnload">
+        <Key ID="STR_pl_phaseline_actionUnload">
             <English>Unload markers</English>
             <German>Marker entladen</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_allLoaded">
+        <Key ID="STR_pl_phaseline_allLoaded">
             <English>All phases are already loaded.</English>
             <German>Alle Phasen sind bereits geladen.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_alreadyLoaded">
+        <Key ID="STR_pl_phaseline_alreadyLoaded">
             <English>Phase "%1" is already loaded.</English>
             <German>Phase "%1" ist bereits geladen.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelCommand">
+        <Key ID="STR_pl_phaseline_channelCommand">
             <English>Command</English>
             <German>Kommando</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelDirect">
+        <Key ID="STR_pl_phaseline_channelDirect">
             <English>Direct</English>
             <German>Direkt</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelDisabled">
+        <Key ID="STR_pl_phaseline_channelDisabled">
             <English>No channel available for placing markers.</English>
             <German>Es ist kein Kanal zum Platzieren von Markern verfügbar.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelGlobal">
+        <Key ID="STR_pl_phaseline_channelGlobal">
             <English>Global</English>
             <German>Global</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelGroup">
+        <Key ID="STR_pl_phaseline_channelGroup">
             <English>Group</English>
             <German>Gruppe</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelLocal">
+        <Key ID="STR_pl_phaseline_channelLocal">
             <English>Local only</English>
             <German>Nur lokal</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelSide">
+        <Key ID="STR_pl_phaseline_channelSide">
             <English>Side</English>
             <German>Seite</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_channelVehicle">
+        <Key ID="STR_pl_phaseline_channelVehicle">
             <English>Vehicle</English>
             <German>Fahrzeug</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_chatDisabled">
+        <Key ID="STR_pl_phaseline_chatDisabled">
             <English>Phase Line: Chat commands are disabled in the CBA settings.</English>
             <German>Phase Line: Chat-Befehle sind in den CBA-Einstellungen deaktiviert.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_confirmDelete">
+        <Key ID="STR_pl_phaseline_confirmDelete">
             <English>Confirm</English>
             <German>Bestätigen</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_defaultName">
+        <Key ID="STR_pl_phaseline_defaultName">
             <English>Phase %1</English>
             <German>Phase %1</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_deleted">
+        <Key ID="STR_pl_phaseline_deleted">
             <English>Deleted phase "%1".</English>
             <German>Phase "%1" gelöscht.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_diarySubject">
+        <Key ID="STR_pl_phaseline_diarySubject">
             <English>Phase Line</English>
             <German>Marker-Phasen</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_diaryText">
+        <Key ID="STR_pl_phaseline_diaryText">
             <English>%1 markers saved at %2</English>
             <German>%1 Marker gespeichert um %2</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_listEntry">
+        <Key ID="STR_pl_phaseline_listEntry">
             <English>%1: %2 (%3 markers)%4</English>
             <German>%1: %2 (%3 Marker)%4</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_loaded">
+        <Key ID="STR_pl_phaseline_loaded">
             <English>Loaded phase "%1" (%2 markers).</English>
             <German>Phase "%1" geladen (%2 Marker).</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_loadedTag">
+        <Key ID="STR_pl_phaseline_loadedTag">
             <English>loaded</English>
             <German>geladen</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_noMarkers">
+        <Key ID="STR_pl_phaseline_noMarkers">
             <English>No (new) markers to save.</English>
             <German>Keine (neuen) Marker zum Speichern.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_noPhases">
+        <Key ID="STR_pl_phaseline_noPhases">
             <English>No saved phases for this map.</English>
             <German>Keine gespeicherten Phasen für diese Karte.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_notFound">
+        <Key ID="STR_pl_phaseline_notFound">
             <English>Phase not found: %1</English>
             <German>Phase nicht gefunden: %1</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_notLoaded">
+        <Key ID="STR_pl_phaseline_notLoaded">
             <English>Phase is not loaded: %1</English>
             <German>Phase ist nicht geladen: %1</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_nothingLoaded">
+        <Key ID="STR_pl_phaseline_nothingLoaded">
             <English>No phase is loaded.</English>
             <German>Es ist keine Phase geladen.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saveDialogAll">
+        <Key ID="STR_pl_phaseline_saveDialogAll">
             <English>Also save markers that are already in a phase</English>
             <German>Auch Marker speichern, die schon in einer Phase sind</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saveDialogName">
+        <Key ID="STR_pl_phaseline_saveDialogName">
             <English>Phase name</English>
             <German>Phasenname</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saveDialogNameTooltip">
+        <Key ID="STR_pl_phaseline_saveDialogNameTooltip">
             <English>Leave empty to use the next free default name. An existing phase with the same name is overwritten.</English>
             <German>Leer lassen, um den nächsten freien Standardnamen zu verwenden. Eine vorhandene Phase mit demselben Namen wird überschrieben.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saveDialogTitle">
+        <Key ID="STR_pl_phaseline_saveDialogTitle">
             <English>Save markers as phase</English>
             <German>Marker als Phase speichern</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saveNotAllowed">
+        <Key ID="STR_pl_phaseline_saveNotAllowed">
             <English>In singleplayer, saving needs the access mode "ACE interaction" or "Both" (CBA settings).</English>
             <German>Im Einzelspieler ist Speichern nur mit der Zugriffsart "ACE-Interaktion" oder "Beides" möglich (CBA-Einstellungen).</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saveOthers">
+        <Key ID="STR_pl_phaseline_saveOthers">
             <English>Show other players in the save menu</English>
             <German>Andere Spieler im Speichern-Menü anzeigen</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saveOthersDesc">
+        <Key ID="STR_pl_phaseline_saveOthersDesc">
             <English>Lists every other player who placed markers under "Save markers" in the ACE menu, to save that player's markers. Turn this off for a shorter menu, #savemarkers --other works either way.</English>
             <German>Listet im ACE-Menü unter "Marker speichern" jeden anderen Spieler auf, der Marker gesetzt hat, um dessen Marker zu speichern. Ausschalten für ein kürzeres Menü, #savemarkers --other geht in beiden Fällen.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_saved">
+        <Key ID="STR_pl_phaseline_saved">
             <English>Saved phase "%1" (%2 markers).</English>
             <German>Phase "%1" gespeichert (%2 Marker).</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_savingCategory">
+        <Key ID="STR_pl_phaseline_savingCategory">
             <English>Saving</English>
             <German>Speichern</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_skippedDrawings">
+        <Key ID="STR_pl_phaseline_skippedDrawings">
             <English>%1 drawn lines skipped, drawing is disabled on this channel.</English>
             <German>%1 gezeichnete Linien übersprungen, Zeichnen ist auf diesem Kanal deaktiviert.</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_tooManyMarkers">
+        <Key ID="STR_pl_phaseline_tooManyMarkers">
             <English>Too many markers to save (%1, maximum %2).</English>
             <German>Zu viele Marker zum Speichern (%1, maximal %2).</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_unknownPlayer">
+        <Key ID="STR_pl_phaseline_unknownPlayer">
             <English>Unknown player (%1)</English>
             <German>Unbekannter Spieler (%1)</German>
         </Key>
-        <Key ID="STR_pl_Phaseline_unloaded">
+        <Key ID="STR_pl_phaseline_unloaded">
             <English>Removed phase "%1" (%2 markers).</English>
             <German>Phase "%1" entfernt (%2 Marker).</German>
         </Key>
