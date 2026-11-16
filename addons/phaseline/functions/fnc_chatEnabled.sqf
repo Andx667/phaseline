@@ -4,6 +4,6 @@ private _mode = missionNamespace getVariable [QGVAR(accessMode), ACCESS_MODE_CHA
 
 if (_mode in [ACCESS_MODE_CHAT, ACCESS_MODE_ALL]) exitWith {true};
 
-systemChat LLSTRING(chatDisabled);
+[LLSTRING(chatDisabled)] call ace_common_fnc_displayTextStructured;
 
 false
