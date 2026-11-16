@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_target"];
+params [["_target", objNull, [objNull]]];
 
 private _actions = [];
 

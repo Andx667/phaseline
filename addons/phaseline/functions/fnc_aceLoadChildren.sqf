@@ -16,7 +16,7 @@
  * Public: No
  */
 
-params ["_target"];
+params [["_target", objNull, [objNull]]];
 
 // Reihenfolge entspricht den Kanal-IDs
 private _channelLabels = [
